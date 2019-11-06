@@ -20,3 +20,21 @@
 .App-link {
   color: #09d3ac;
 }
+.quoteBox {
+  text-align: center;
+  
+
+
+}
+button {
+  border: outset;
+  border-color: violet;
+  background-color: blue;
+  color: palegreen;
+  font-size: 25px;
+
+
+
+
+}
+

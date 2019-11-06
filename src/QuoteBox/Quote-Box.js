@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import App from "../App";
-class QuouteBox extends Component {
+
+class QuoteBox extends Component {
     render() {
-        return (
-            <h1>AHJKMNHU</h1>
-        )
-    }
+        const html = document.documentElement;
+        html.style.backgroundColor = this.props.color;
+
+    return (
+      <div>
+        <h1>{this.props.quote}</h1>
+            <h1>~-{this.props.author !== "" ? this.props.author : "unknown"}-~</h1>
+        <button onClick={this.props.handleClick}> ~- NEW QUOTE -~ </button>
+      </div>
+    );
+  }
 }
-export default App;
+export default QuoteBox;
